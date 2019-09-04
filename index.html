@@ -61,8 +61,16 @@
 
 					<script>
 						const now = new Date();
+
+						const codeoptions = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+
+						let res = ""
+						for (let i = 0; i < 6; i++) {
+							res += codeoptions[Math.floor(Math.random() * codeoptions.length)];
+						}
+
 						document.getElementById("contents").innerHTML = `
-							Customer code<br> 473K2a <br id="time"> Time: ${now.getHours()}:${now.getMinutes()} <br>Date<br>${("0" + now.getDay()).slice(-2)}-${("0" + now.getMonth()).slice(-2)}-${now.getFullYear()} <br>
+							Customer code<br> ${res} <br id="time"> Time: ${now.getHours()}:${now.getMinutes()} <br>Date<br>${("0" + now.getDay()).slice(-2)}-${("0" + now.getMonth()).slice(-2)}-${now.getFullYear()} <br>
 						`;
 					</script>
 
