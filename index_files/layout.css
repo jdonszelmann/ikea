@@ -1,0 +1,605 @@
+﻿body{
+	background-color:#c0c0c0;  /* Body background */
+}
+.container{
+	background-color:#FFF; /* Container background */	
+}
+
+
+/* Hide elements */	
+.hidden, .none{
+	position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+.mrInstruct{
+	font-style: italic;
+	font-size: 1rem !important;
+}
+
+/* ========================================================= (TIB) ================================================== */
+#testPanel{
+	position:fixed;
+	top:0px;
+	width:100%;
+	text-align:center;
+}
+#innerTest{
+	width:250px;
+	margin:auto auto;
+	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	box-shadow: 10px 10px 25px #888888;
+	color:#ffffff;
+	cursor: pointer;	
+	padding: 0px 5px;
+}
+
+#projectDetails tr td{
+	width:150px;
+}
+
+.errorBackground{
+	background-color:red !important;
+	background-image:url('')!important;
+}
+table.testTable caption {
+	font-size:18px;
+	font-weight:bold;
+	text-align: center;
+}
+
+.quotaFail{
+	background-color:#FF1919;
+}
+
+.errorCount{
+	float:left;
+	font-size:14px;
+}
+.rowHighlight{
+	background-color:yellow;
+	color: black !important;
+}
+
+.linkShow {
+	color:#0000ff;
+	font-size:12px;
+}
+table.testTable thead tr {
+	color:#ffffff;
+}
+caption{
+	caption-side: top;
+}
+/* ========================================================= (END TIB) ================================================== */
+
+
+
+/* Custom media queries for container */
+@media (min-width: 544px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {  
+  .container {
+    max-width: 940px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1201px;
+  }
+}
+.nextNavButton, .previousNavButton, .logo, .tempMenuButtons, .menuButton, .tempPrev, .tempNext{
+	padding-left: 0rem;
+    padding-right: 0rem;
+}
+.previousNavButton, .nextNavButton{
+	width:50%;
+	float:left;
+}
+.logo{
+	width:80%;
+	float:left;
+}
+.logo img{
+	margin-top: .9375rem;
+	display: inline-table !important;
+	position:static;
+}
+.tempMenuButtons{
+	width:20%;
+	float:left;
+}
+.tempNext, .tempPrev{
+	display:none;
+}
+
+#loader{
+	text-align:center;
+}
+.preloader-wrapper{
+	margin-top: 7rem;
+    margin-bottom: 5rem;
+}
+.question-text{
+	padding-top: .9375rem;
+    padding-bottom: .9375rem;
+	font-size: 1.1rem !important;
+	margin-bottom:0.4rem;
+}
+
+.question-text span{
+	font-size: 1.1rem;
+}
+.question-component{
+	min-height: 15rem;
+}
+
+.question-component{
+
+	padding-top: .9375rem;
+    padding-bottom: .9375rem;
+	/*padding-left: 0rem;
+    padding-right: 0rem;*/
+}
+
+.col-border{
+	padding: 0;
+	border: 1px solid #ddd;
+	margin:-1px 0 0 -1px;
+}
+
+.menuButton i, .tempPrev i, .tempNext i{
+	padding: 0.9375rem;
+	margin-top: 0.3rem;
+}
+
+.mrErrorText{
+	color:#b30904;
+}
+
+    .tempMenuButtons .dropdown-menu {
+        min-width:0rem;
+    }
+
+.tempMenuButtons .dropdown-toggle::after {
+    display:none;
+}
+
+.dropdown-content{
+	z-index:9999999999 !important;
+}
+
+md-backdrop.md-select-backdrop {
+z-index:103;
+}
+
+.md-select-menu-container {
+z-index:104;
+}
+
+
+.form-control{
+	margin-bottom: 0rem;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search-md],
+textarea.md-textarea{
+  min-width: 1.5rem;
+}
+
+
+span[id*="Cell."]{
+	height: 100%;
+    display: table;
+	margin: auto;
+	width: 100%;
+    text-align: center;
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+
+span[id*="Cell."] label{
+	display: table-cell !important;
+    vertical-align: middle !important;
+	padding: 0.9375rem !important;
+	width: 100%;
+}
+
+[type=radio]+label:after, [type=radio]+label:before, [type=checkbox]+label:before{
+	width: 26px !important;
+    height: 26px !important;
+}
+
+[type=checkbox]:checked+label:before{
+	width: 13px !important;
+    height: 26px !important;
+}
+
+span[id*="Cell."] [type=radio]+label:after, span[id*="Cell."] [type=radio]+label:before, span[id*="Cell."] [type=checkbox].filled-in+label:after, span[id*="Cell."] [type=checkbox].filled-in+label:before, span[id*="Cell."] [type=checkbox]+label:before{
+	position: absolute;
+    left: -9999px;
+    visibility: hidden;
+}
+
+
+input[questionname$=".Other"]{
+	width:100% !important;
+}
+nput[questionname$=".Other"] + label{
+	padding:0 !important;
+}
+
+
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime-local], input[type=tel], input[type=number], input[type=search-md], textarea.md-textarea{
+	border: 1px solid #ccc;
+}
+input[type=text] + label, input[type=password] + label, input[type=email] + label, input[type=url] + label, input[type=time] + label, input[type=date] + label, input[type=datetime-local] + label, input[type=tel] + label, input[type=number] + label, input[type=search-md] + label, textarea.md-textarea + label{
+	padding: 0.3rem 0rem 0.1rem 0.4rem !important;
+} 
+
+/*
+input[type=date], input[type=datetime-local], input[type=email], input[type=number], input[type=password], input[type=search-md], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url]{
+	height:1.5rem !important;
+}*/
+
+.mrEdit{
+	margin-bottom: 0.5rem !important;
+    /*padding-left: 0.5rem !important;*/
+}
+
+.md-form{
+	display:flex;
+}
+textarea.md-textarea{
+	padding: 0.5rem 0 !important;
+}
+
+.md-form, .md-form .btn{
+	margin-bottom: 0rem !important;
+	margin-top: 1rem !important;
+}
+
+input[iscode="true"] + label span{
+	background-color: transparent !important;
+}
+  /*
+Flexi Bootstrap - The Missing Bootstrap Thumbnail Demos
+
+Author : Bryan Willis
+
+Working Demos of Equal Height Flexbox and Tables as well as Masonary Thumbnails in Bootstrap 3. See the Github repo for complete version supporting legacy browser fallback.
+*/
+
+
+/* EXAMPLE 1 - BOOTSTRAP FLEXBOX
+   - Equal Height Columns in Rows
+   - Equal Height Thumbnails
+   - Flex Grow to Fill Paragraph Height
+*/
+
+/* Flexbox Equal Height Bootstrap Columns (fully responsive) */
+@media only screen and (min-width : 481px) {
+  .flex-row.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+	 -webkit-flex-wrap: wrap;
+	     -ms-flex-wrap: wrap;
+	         flex-wrap: wrap;
+  }
+  .flex-row.row > [class*='col-'] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flex-row.row:after, 
+  .flex-row.row:before {
+	 display: -webkit-box;
+	 display: -webkit-flex;
+	 display: -ms-flexbox;
+	 display: flex;
+  }
+}
+
+
+
+
+/* Grow thumbnails to fill columns height */
+.flex-row .thumbnail,
+.flex-row .caption {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1 0 auto;
+	    -ms-flex: 1 0 auto;
+	        flex: 1 0 auto;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+/* Flex Grow Text Container */
+.flex-row .caption p.flex-text {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+}
+
+/* Flex Responsive Image */
+.flex-row img {
+	/*width: 100%;*/
+	margin:auto;
+	height: auto;
+}
+
+
+
+
+/* EXAMPLE 2 - CSS TABLES EQUAL HEIGHT
+   - ie9 support 
+   - not responsive (mobile fallback)
+*/
+
+.table-row.row,
+.table-row-equal {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	word-wrap: break-word;
+}
+.table-row.row [class*="col-"] {
+	width: 25%;
+}
+.table-row.row [class*="col-"],
+.table-row-equal .thumbnail {
+	float: none;
+	display: table-cell;
+	vertical-align: top;
+}
+.table-row-equal {
+	border-spacing: 30px 0px;
+}
+.table-row-equal .thumbnail {
+	width: 1%;
+}
+/* mobile fallback to support partial responsiveness */
+@media only screen and (max-width: 480px) {
+	.table-row-equal .thumbnail {
+		display: block;
+		width: 100%;
+	}
+}
+
+
+/* MASONARY BOOTSTRAP 3 GRID
+   - Who needs V4?
+*/
+.masonary-row.row {
+	-webkit-column-gap: 30px;
+	-moz-column-gap: 30px;
+	column-gap: 30px;
+	padding-left: 15px;
+	padding-right: 15px;
+	word-wrap: break-word;
+	-webkit-column-fill: balance;
+	   -moz-column-fill: balance;
+	        column-fill: balance;
+}
+.masonary-row [class*="col-"] {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	float: none;
+	padding: 0px;
+	-webkit-column-fill: balance;
+	   -moz-column-fill: balance;
+	        column-fill: balance;
+}
+
+
+@media (min-width: 480px) {
+	.masonary-row.row {
+		-webkit-column-count: 2;
+		-moz-column-count: 2;
+		column-count: 2;
+	}
+}
+@media (min-width: 768px) {
+	.masonary-row.row {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+}
+
+
+/* demo */
+.bootflex .well {
+	    -webkit-box-flex: 1;
+	    -webkit-flex-grow: 1;
+	        -ms-flex-positive: 1;
+	            flex-grow: 1;
+	}
+
+/* pre hack for small devices */
+pre {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+}
+.flex-row.flex-code.row > [class*='col-'] .flex-text {
+	-webkit-box-flex: 1;
+	-webkit-flex-grow: 1;
+	    -ms-flex-positive: 1;
+	        flex-grow: 1;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+div[class="flex-row row"]{
+	margin-right: 0rem;
+    margin-left: 0rem;
+	/*margin-right: -1.19rem;*/
+}
+
+
+.waves-effect{
+	z-index:0 !important;
+}
+
+/* Material scroll to top*/
+
+
+.material-scrolltop {
+    display: block;
+    position: fixed;
+    width: 0;
+    height: 0;
+    bottom: 46px;
+    right: 46px;
+    padding: 0;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
+    cursor: hand;
+    border-radius: 50%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    -ms-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    -moz-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    -o-transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+    transition: all 0.3s cubic-bezier(0.25, 0.25, 0, 1);
+}
+
+.material-scrolltop:hover {
+    text-decoration: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5), 0 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.material-scrolltop::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    content: "";
+    width: 0;
+    border-radius: 100%;    
+}
+
+.material-scrolltop:active::before {
+    width: 120%;
+    padding-top: 120%;
+    -webkit-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.material-scrolltop.reveal {
+    width: 56px;
+    height: 56px;
+}
+
+.material-scrolltop span {
+    display: block;
+    font-size: 25px;
+    color: #fff;
+}
+
+.material-scrolltop,
+.material-scrolltop::before {
+    background-image: url(icons/top-arrow.svg);
+    background-position: center 50%;
+    background-repeat: no-repeat;
+}
+/*
+.popover{
+    max-width: 100%;
+}
+*/
+
+
+.picker__month-display, .picker__day-display, .picker__year-display{'display':table-cell;font-size':2rem}
+.picker__month-display, .picker__day-display{padding-right:1rem}
+.popover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1060;
+    display: none;
+    max-width: 276px;
+    padding: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    text-align: start;
+    text-decoration: none;
+    text-shadow: none;
+    text-transform: none;
+    letter-spacing: normal;
+    word-break: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: normal;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: 6px;
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    line-break: auto;
+}
+

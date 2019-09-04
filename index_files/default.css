@@ -1,0 +1,124 @@
+﻿/*
+
+#169191 - Theme color - Next button background color 
+#575757 - Theme standard color 1  - Question header and Previous button font color
+#e4e4e4  - Theme standard color 2  - Question header and Previous button background color
+#ffffff  - Theme standard color 3 - Next button font color 
+*/
+
+/* Background colors */
+
+.theme-bg-color{
+	background-color: #00838f !important;
+}
+.theme-standard-bg-color1{
+	background-color: #575757 !important;
+}
+.theme-standard-bg-color2{
+	background-color: #e4e4e4  !important;
+}
+.theme-standard-bg-color3{
+	background-color: #fff !important;
+}
+
+/* Font colors */
+
+.theme-font-color{
+	color: #00838f !important;
+}
+.theme-standard-font-color1{
+	color: #575757 !important;
+}
+.theme-standard-font-color2{
+	color: #e4e4e4  !important;
+}
+.theme-standard-font-color3{
+	color: #fff !important;
+}
+
+
+/* Categorical background color - Checkboxes and Radio buttons background color*/
+span[id*="Cell."] [type=radio]:checked+label, span[id*="Cell."] [type=checkbox]:checked+label{
+	background-color:#00acc1;
+	color:#fff;
+}
+
+
+.md-form label{
+	color:#ccc;
+}
+
+.spinner-blue-only{
+	border-color: #00838f !important;
+}
+
+/* Below color code for when focus on below input types change the bottom border color of the inputs*/
+
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search-md]:focus:not([readonly]),
+textarea.md-textarea:focus:not([readonly]) {
+  border-bottom: 1px solid #00838f;
+  box-shadow: 0 1px 0 0 #00838f;
+}
+
+
+/* Below color code for when focus on below input types change the label color of the corresponding inputs */
+
+input[type=text]:focus:not([readonly]) + label,
+input[type=password]:focus:not([readonly]) + label,
+input[type=email]:focus:not([readonly]) + label,
+input[type=url]:focus:not([readonly]) + label,
+input[type=time]:focus:not([readonly]) + label,
+input[type=date]:focus:not([readonly]) + label,
+input[type=datetime-local]:focus:not([readonly]) + label,
+input[type=tel]:focus:not([readonly]) + label,
+input[type=number]:focus:not([readonly]) + label,
+input[type=search-md]:focus:not([readonly]) + label,
+textarea.md-textarea:focus:not([readonly]) + label {
+  color: #00838f;
+}
+
+[type=checkbox]:checked+label:before{
+	border-right: 2px solid #00838f;
+    border-bottom: 2px solid #00838f;
+}
+[type=radio].with-gap:checked+label:before{
+	    border: 2px solid #00838f;
+}
+
+[type=radio].with-gap:checked+label:after{
+	border: 2px solid #00838f;
+    background-color: #00838f;
+}
+
+[type=radio]:checked+label:after{
+	border: 2px solid #00838f;
+    background-color: #00838f;
+}
+
+.dropdown-content li>a, .dropdown-content li>span{
+	color: #00838f;
+}
+
+.material-scrolltop{
+	background-color: #00838f;
+}
+.material-scrolltop:hover {
+    background-color: #00838f;
+}
+.material-scrolltop::before {
+	background: #66bb6a;
+}
+
+
+.dropdown-content li.selected>a, .dropdown-content li.selected>span{
+	color:#fff;
+}
