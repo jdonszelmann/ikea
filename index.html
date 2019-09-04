@@ -70,7 +70,7 @@
 						}
 
 						document.getElementById("contents").innerHTML = `
-							Customer code<br> ${res} <br id="time"> Time: ${now.getHours()}:${now.getMinutes()} <br>Date<br>${("0" + now.getDay()).slice(-2)}-${("0" + now.getMonth()).slice(-2)}-${now.getFullYear()} <br>
+							Customer code<br> ${res} <br id="time"> Time: ${now.getHours()}:${now.getMinutes()} <br>Date<br>${("0" + (now.getDay() + 1)).slice(-2)}-${("0" + now.getMonth()).slice(-2)}-${now.getFullYear()} <br>
 						`;
 					</script>
 
